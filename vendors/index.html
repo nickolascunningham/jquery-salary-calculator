@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>SalaryCalc</title>
+</head>
+
+<body>
+<div>
+    <form>
+        <div>
+            <label>first name:</label>
+            <input required id="first_name"  type="text" name="first_name" placeholder="enter first name" >
+        </div>
+    
+        <div>
+            <label>last name:</label>
+            <input required id="last_name"  type="text" name="last_name" placeholder="enter last name" >
+        </div>
+    
+        <div>
+            <label>ID:</label>
+            <input required id="id"  type="number" name='id' placeholder="enter ID" >
+        </div>
+    
+        <div>
+            <label>Job Title:</label>
+            <input required id="job_title"  type="text" name='job_title'  placeholder="enter job title" >
+        </div>
+         <div>
+            <label>annual salary:</label>
+            <input required id="salary"  type="number" name='salary' placeholder="enter annual salary" >
+        </div>
+    
+        <input type="submit" value="submit" >
+       
+    </form>
+
+    <table id="salary-table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID</th>
+                <th>Job Title</th>
+                <th id="mysal">Annual salary</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id='tbody'>
+        
+        </tbody>
+    </table>
+
+    <p id="total"></p>
+</div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../scripts/client.js"></script>
+</body>
+
+</html>
